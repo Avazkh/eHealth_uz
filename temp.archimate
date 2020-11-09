@@ -179,9 +179,13 @@
   </folder>
   <folder name="Application" id="id-93de4972964347009abdc883adf23d5c" type="application">
     <folder name="МИС" id="id-a1f30db28d1941ec875fd5642a4afad6"/>
-    <folder name="Электронное Правительство" id="id-dcc9c5a749ea4399b7c203f351f7cc6e"/>
+    <folder name="Электронное Правительство" id="id-dcc9c5a749ea4399b7c203f351f7cc6e">
+      <element xsi:type="archimate:ApplicationComponent" name="Application Component" id="id-9f2b8c6641e2493792c35a220dd6cf16"/>
+    </folder>
   </folder>
-  <folder name="Technology &amp; Physical" id="id-87f594b2c8754629bbda6331bd3a60ab" type="technology"/>
+  <folder name="Technology &amp; Physical" id="id-87f594b2c8754629bbda6331bd3a60ab" type="technology">
+    <folder name="Группы Серверов" id="id-27530d1547714a8b9e1b7011b94bea08"/>
+  </folder>
   <folder name="Motivation" id="id-28b72a8d1cbf438993885f24a2e15ecf" type="motivation"/>
   <folder name="Implementation &amp; Migration" id="id-04bb6ebbd83541dbbb7921ff11708825" type="implementation_migration"/>
   <folder name="Other" id="id-3d0f2106e5fe4bfc9165167c7ba714bc" type="other"/>
