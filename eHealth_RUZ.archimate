@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<archimate:model xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:archimate="http://www.archimatetool.com/archimate" name="eHealth_RUZ" id="id-e617d286bb624dadbff2876a66a0a154" version="4.6.0">
+  <folder name="Strategy" id="id-2331a31397be4095847fd59610b75a27" type="strategy"/>
+  <folder name="Business" id="id-8bdffefa2cdb46de9a1ed81eb4524964" type="business"/>
+  <folder name="Application" id="id-93de4972964347009abdc883adf23d5c" type="application"/>
+  <folder name="Technology &amp; Physical" id="id-87f594b2c8754629bbda6331bd3a60ab" type="technology"/>
+  <folder name="Motivation" id="id-28b72a8d1cbf438993885f24a2e15ecf" type="motivation"/>
+  <folder name="Implementation &amp; Migration" id="id-04bb6ebbd83541dbbb7921ff11708825" type="implementation_migration"/>
+  <folder name="Other" id="id-3d0f2106e5fe4bfc9165167c7ba714bc" type="other"/>
+  <folder name="Relations" id="id-412aa3eaea564378bcbf727083e24193" type="relations"/>
+  <folder name="Views" id="id-c5b8b6449f1e4f249a3492ee4d95b6be" type="diagrams">
+    <element xsi:type="archimate:ArchimateDiagramModel" name="Default View" id="id-35d49046c6284b18a225666bf3d13b9d"/>
+  </folder>
+</archimate:model>
