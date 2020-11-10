@@ -48,7 +48,7 @@
       <element xsi:type="archimate:Capability" name="Управление назначениями (CPOE)" id="id-fe685117be1e44df859a7795781d9d45"/>
       <element xsi:type="archimate:Capability" name="Управление Радиологическими Исследованиями" id="id-57ab6210500a4c4aa32b43d1cb7aaa9f"/>
       <element xsi:type="archimate:Capability" name="Управление Регистрацией и Передвижением Пациентов" id="id-aba34244747846529bce9c40aa87a36f"/>
-      <element xsi:type="archimate:Capability" name="Контроль и Профила-ктика Инфекционных Заражений" id="id-9fc6df56787a4946bbccd4de92e3bfc4"/>
+      <element xsi:type="archimate:Capability" name="Контроль и Профилак-тика Инфекционных Заражений" id="id-9fc6df56787a4946bbccd4de92e3bfc4"/>
     </folder>
     <folder name="4. Управление Вспомогательными Службами" id="id-eb8821733dea47e3986afb6e5e39f8b0">
       <folder name="Управление ресурсами" id="id-14979427007240c4b6580af0b9b80ca9">
@@ -169,6 +169,7 @@
     <element xsi:type="archimate:Capability" name="Платные услуги" id="id-1a30bd8894f8447bbd76e65553fd8835"/>
     <element xsi:type="archimate:Capability" name="Доходы" id="id-aae40b80271644f9b692e1ff9b6e89da"/>
     <element xsi:type="archimate:Capability" name="Расходы" id="id-040d457cc484468aa075d37df47bca62"/>
+    <element xsi:type="archimate:Capability" name="Capability" id="id-461e873c807e4ff9a52f081e3194a5cf"/>
   </folder>
   <folder name="Business" id="id-8bdffefa2cdb46de9a1ed81eb4524964" type="business">
     <folder name="Организации" id="id-7c588f85193b431db85e4791dc986400">
@@ -323,6 +324,7 @@
     <element xsi:type="archimate:SpecializationRelationship" id="id-d00f449645fa44ee8196ae64f909eada" source="id-937d4398d2bb4717a52e9aadecc6e3b9" target="id-aae40b80271644f9b692e1ff9b6e89da"/>
     <element xsi:type="archimate:SpecializationRelationship" id="id-2d3eff21a0cc4cc49654cd0e49aad819" source="id-05ef2528c3514b44898238c2c557476c" target="id-aae40b80271644f9b692e1ff9b6e89da"/>
     <element xsi:type="archimate:SpecializationRelationship" id="id-7a9ebb9325d54eef96ca1931ab06ae01" source="id-1a30bd8894f8447bbd76e65553fd8835" target="id-aae40b80271644f9b692e1ff9b6e89da"/>
+    <element xsi:type="archimate:AggregationRelationship" id="id-c9e3e441d657453c9baba913051b1c74" source="id-05f2b4d1c58e43568b1c83fc24819b3e" target="id-5227e64fd4024bb9898a306de61e26c8"/>
   </folder>
   <folder name="Views" id="id-c5b8b6449f1e4f249a3492ee4d95b6be" type="diagrams">
     <folder name="1. Strategy" id="id-c74ed8d99e5648699f4a6423f5ff243d">
@@ -833,7 +835,7 @@
           <sourceConnection xsi:type="archimate:Connection" id="id-c176cbd42aa640c6b0e0d024434e3397" source="id-c3fe8211a9d54cf2b2d68de21c625a59" target="id-dd1e0c2b352c4d6f826556d35137acf1" archimateRelationship="id-a957c0b6082e4ce4b41e53b2a124ab0d"/>
         </child>
       </element>
-      <element xsi:type="archimate:ArchimateDiagramModel" name="Управление Медицинскими Кадрами" id="id-2bdfcd91e1364e609ee3ffe9dbb86dee">
+      <element xsi:type="archimate:ArchimateDiagramModel" name="Управление Медицинскими Кадрами" id="id-2bdfcd91e1364e609ee3ffe9dbb86dee" viewpoint="capability">
         <child xsi:type="archimate:DiagramObject" id="id-80141c08e0014476b95a45a873d0d31c" targetConnections="id-36b2ae79fd1e4b5abc1f8cc708d20bf4 id-9647373eaab2419aac0f518641ee3f55 id-272c109c2fe043df84f136d7f426f98e id-054fb768ed5f4dd7a79dc5ebee2ea727" archimateElement="id-4d6a68d7e8e142bd8f45dbc986693ec6">
           <bounds x="265" y="132" width="120" height="55"/>
         </child>
@@ -854,8 +856,8 @@
           <sourceConnection xsi:type="archimate:Connection" id="id-054fb768ed5f4dd7a79dc5ebee2ea727" source="id-743108c3c9c848549aa8e9462f3cddd6" target="id-80141c08e0014476b95a45a873d0d31c" archimateRelationship="id-205427a6e7b44ea789915f22dc12343a"/>
         </child>
       </element>
-      <element xsi:type="archimate:ArchimateDiagramModel" name="Управление Вместимостью (Capacity Management)" id="id-3c2adea46ee04997a67ec5974304cc37" connectionRouterType="2">
-        <child xsi:type="archimate:DiagramObject" id="id-6726ff8bcc344b7785389adbcdfd7cf3" targetConnections="id-0784dd1ef9f24b329a09d0ef1544eeb1 id-8d70a8dac4cd4f4088d2367754e3ac4b id-781fb552bbab451c9f76149241025d8a id-13b1fcd5a39d4c5bb472d043efbf8ce9" archimateElement="id-05f2b4d1c58e43568b1c83fc24819b3e">
+      <element xsi:type="archimate:ArchimateDiagramModel" name="Управление Вместимостью (Capacity Management)" id="id-3c2adea46ee04997a67ec5974304cc37" viewpoint="capability">
+        <child xsi:type="archimate:DiagramObject" id="id-6726ff8bcc344b7785389adbcdfd7cf3" targetConnections="id-8d70a8dac4cd4f4088d2367754e3ac4b id-781fb552bbab451c9f76149241025d8a id-0784dd1ef9f24b329a09d0ef1544eeb1 id-62c12c7894294967b959f8c2a5f3d88f" archimateElement="id-05f2b4d1c58e43568b1c83fc24819b3e">
           <bounds x="156" y="144" width="143" height="55"/>
         </child>
         <child xsi:type="archimate:DiagramObject" id="id-c85021e1c4ac493387b0ce7f0e20531d" archimateElement="id-4393d889dcbf4bc8b72d61516be23eb7">
@@ -872,10 +874,10 @@
         </child>
         <child xsi:type="archimate:DiagramObject" id="id-4beca077e30c4b1ca3ec4a2d679b987f" archimateElement="id-5227e64fd4024bb9898a306de61e26c8">
           <bounds x="384" y="252" width="145" height="55"/>
-          <sourceConnection xsi:type="archimate:Connection" id="id-13b1fcd5a39d4c5bb472d043efbf8ce9" source="id-4beca077e30c4b1ca3ec4a2d679b987f" target="id-6726ff8bcc344b7785389adbcdfd7cf3" archimateRelationship="id-af6a13bbb56d4caaa0cd5d42dea6551b"/>
+          <sourceConnection xsi:type="archimate:Connection" id="id-62c12c7894294967b959f8c2a5f3d88f" source="id-4beca077e30c4b1ca3ec4a2d679b987f" target="id-6726ff8bcc344b7785389adbcdfd7cf3" archimateRelationship="id-af6a13bbb56d4caaa0cd5d42dea6551b"/>
         </child>
       </element>
-      <element xsi:type="archimate:ArchimateDiagramModel" name="Управление Финансированием" id="id-c7fb31debf9b4f70b6cb6fbcd43c2ee9">
+      <element xsi:type="archimate:ArchimateDiagramModel" name="Управление Финансированием" id="id-c7fb31debf9b4f70b6cb6fbcd43c2ee9" viewpoint="strategy">
         <child xsi:type="archimate:DiagramObject" id="id-41664df059954428aeff7423b214edbf" targetConnections="id-08fa7cc642a14a6a99b3bf95707ddbd4 id-1175a413cb2a43f795e484bc9dae0d15 id-b7daa2459bd342b6b01f5892bdd4460c" archimateElement="id-6815ac37457a48c99392d28ae8102b72">
           <bounds x="360" y="180" width="120" height="55"/>
         </child>
