@@ -725,15 +725,24 @@
           <sourceConnection xsi:type="archimate:Connection" id="id-69971359c7c944538ce9b5696dd2e8a4" source="id-0420425a34ba4eaf91c4a86844628fc1" target="id-749c72b424fb4d929b0c869ec8eda190" archimateRelationship="id-e288ad5bb5e147f3abdb7bd93be7c6f2"/>
           <child xsi:type="archimate:DiagramObject" id="id-ae75eced14d84438beae991615f7f127" targetConnections="id-98d0c722d9514a88b79046e672a35de4" archimateElement="id-6815ac37457a48c99392d28ae8102b72">
             <bounds x="12" y="24" width="144" height="73"/>
+            <child xsi:type="archimate:DiagramModelReference" id="id-47394f51e1a642a8a2394dc949d6c259" model="id-c7fb31debf9b4f70b6cb6fbcd43c2ee9">
+              <bounds width="25" height="25"/>
+            </child>
           </child>
           <child xsi:type="archimate:DiagramObject" id="id-107fc4fd791749e3a965280c88be9295" targetConnections="id-34ab87a9b1a043c3b6f28eb32bbd1b8d" archimateElement="id-05f2b4d1c58e43568b1c83fc24819b3e">
             <bounds x="168" y="24" width="132" height="73"/>
+            <child xsi:type="archimate:DiagramModelReference" id="id-53e968d6c95d4463abfb6286949d76ed" model="id-3c2adea46ee04997a67ec5974304cc37">
+              <bounds width="28" height="23"/>
+            </child>
           </child>
           <child xsi:type="archimate:DiagramObject" id="id-749c72b424fb4d929b0c869ec8eda190" targetConnections="id-69971359c7c944538ce9b5696dd2e8a4" archimateElement="id-7b706bd1c4f140b899ee73caeade93c3">
             <bounds x="324" y="24" width="146" height="73"/>
           </child>
           <child xsi:type="archimate:DiagramObject" id="id-4fff616040994a2ea8c93722865becd0" targetConnections="id-979b3845cc9d41bf9e5f185fe55f9c8e" archimateElement="id-4d6a68d7e8e142bd8f45dbc986693ec6">
             <bounds x="504" y="24" width="133" height="73"/>
+            <child xsi:type="archimate:DiagramModelReference" id="id-200fe09a5b044a4ba5738ff0f391e964" model="id-2bdfcd91e1364e609ee3ffe9dbb86dee">
+              <bounds width="23" height="22"/>
+            </child>
           </child>
         </child>
       </element>
