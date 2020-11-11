@@ -170,6 +170,8 @@
     <element xsi:type="archimate:Capability" name="Доходы" id="id-aae40b80271644f9b692e1ff9b6e89da"/>
     <element xsi:type="archimate:Capability" name="Расходы" id="id-040d457cc484468aa075d37df47bca62"/>
     <element xsi:type="archimate:Capability" name="Capability" id="id-461e873c807e4ff9a52f081e3194a5cf"/>
+    <element xsi:type="archimate:Capability" name="Операционные залы" id="id-72fd90e28434432dbc84908d1aeb4ebf"/>
+    <element xsi:type="archimate:Capability" name="Операционные залы (copy)" id="id-1a1863821467445082a0a2375f71be21"/>
   </folder>
   <folder name="Business" id="id-8bdffefa2cdb46de9a1ed81eb4524964" type="business">
     <folder name="Организации" id="id-7c588f85193b431db85e4791dc986400">
@@ -325,6 +327,7 @@
     <element xsi:type="archimate:SpecializationRelationship" id="id-2d3eff21a0cc4cc49654cd0e49aad819" source="id-05ef2528c3514b44898238c2c557476c" target="id-aae40b80271644f9b692e1ff9b6e89da"/>
     <element xsi:type="archimate:SpecializationRelationship" id="id-7a9ebb9325d54eef96ca1931ab06ae01" source="id-1a30bd8894f8447bbd76e65553fd8835" target="id-aae40b80271644f9b692e1ff9b6e89da"/>
     <element xsi:type="archimate:AggregationRelationship" id="id-c9e3e441d657453c9baba913051b1c74" source="id-05f2b4d1c58e43568b1c83fc24819b3e" target="id-5227e64fd4024bb9898a306de61e26c8"/>
+    <element xsi:type="archimate:SpecializationRelationship" id="id-eb82889eb4634900973f63e730258140" source="id-72fd90e28434432dbc84908d1aeb4ebf" target="id-05f2b4d1c58e43568b1c83fc24819b3e"/>
   </folder>
   <folder name="Views" id="id-c5b8b6449f1e4f249a3492ee4d95b6be" type="diagrams">
     <folder name="1. Strategy" id="id-c74ed8d99e5648699f4a6423f5ff243d">
@@ -866,7 +869,7 @@
         </child>
       </element>
       <element xsi:type="archimate:ArchimateDiagramModel" name="Управление Вместимостью (Capacity Management)" id="id-3c2adea46ee04997a67ec5974304cc37" viewpoint="capability">
-        <child xsi:type="archimate:DiagramObject" id="id-6726ff8bcc344b7785389adbcdfd7cf3" targetConnections="id-8d70a8dac4cd4f4088d2367754e3ac4b id-781fb552bbab451c9f76149241025d8a id-0784dd1ef9f24b329a09d0ef1544eeb1 id-62c12c7894294967b959f8c2a5f3d88f" archimateElement="id-05f2b4d1c58e43568b1c83fc24819b3e">
+        <child xsi:type="archimate:DiagramObject" id="id-6726ff8bcc344b7785389adbcdfd7cf3" targetConnections="id-8d70a8dac4cd4f4088d2367754e3ac4b id-781fb552bbab451c9f76149241025d8a id-0784dd1ef9f24b329a09d0ef1544eeb1 id-62c12c7894294967b959f8c2a5f3d88f id-01eb1f9b0d044b50b92c3511eb749c6d" archimateElement="id-05f2b4d1c58e43568b1c83fc24819b3e">
           <bounds x="156" y="144" width="143" height="55"/>
         </child>
         <child xsi:type="archimate:DiagramObject" id="id-c85021e1c4ac493387b0ce7f0e20531d" archimateElement="id-4393d889dcbf4bc8b72d61516be23eb7">
@@ -884,6 +887,10 @@
         <child xsi:type="archimate:DiagramObject" id="id-4beca077e30c4b1ca3ec4a2d679b987f" archimateElement="id-5227e64fd4024bb9898a306de61e26c8">
           <bounds x="384" y="252" width="145" height="55"/>
           <sourceConnection xsi:type="archimate:Connection" id="id-62c12c7894294967b959f8c2a5f3d88f" source="id-4beca077e30c4b1ca3ec4a2d679b987f" target="id-6726ff8bcc344b7785389adbcdfd7cf3" archimateRelationship="id-af6a13bbb56d4caaa0cd5d42dea6551b"/>
+        </child>
+        <child xsi:type="archimate:DiagramObject" id="id-766e155bb090483d97e3c7c222936dde" archimateElement="id-72fd90e28434432dbc84908d1aeb4ebf">
+          <bounds x="564" y="252" width="145" height="55"/>
+          <sourceConnection xsi:type="archimate:Connection" id="id-01eb1f9b0d044b50b92c3511eb749c6d" source="id-766e155bb090483d97e3c7c222936dde" target="id-6726ff8bcc344b7785389adbcdfd7cf3" archimateRelationship="id-eb82889eb4634900973f63e730258140"/>
         </child>
       </element>
       <element xsi:type="archimate:ArchimateDiagramModel" name="Управление Финансированием" id="id-c7fb31debf9b4f70b6cb6fbcd43c2ee9" viewpoint="strategy">
