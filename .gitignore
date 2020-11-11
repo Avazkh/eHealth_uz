@@ -9,6 +9,7 @@
 *.log.*
 *.sig
 *.bak
+*.pdf
 
 pkg/
 src/
