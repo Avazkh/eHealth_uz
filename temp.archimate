@@ -169,9 +169,7 @@
     <element xsi:type="archimate:Capability" name="Платные услуги" id="id-1a30bd8894f8447bbd76e65553fd8835"/>
     <element xsi:type="archimate:Capability" name="Доходы" id="id-aae40b80271644f9b692e1ff9b6e89da"/>
     <element xsi:type="archimate:Capability" name="Расходы" id="id-040d457cc484468aa075d37df47bca62"/>
-    <element xsi:type="archimate:Capability" name="Capability" id="id-461e873c807e4ff9a52f081e3194a5cf"/>
     <element xsi:type="archimate:Capability" name="Операционные залы" id="id-72fd90e28434432dbc84908d1aeb4ebf"/>
-    <element xsi:type="archimate:Capability" name="Операционные залы (copy)" id="id-1a1863821467445082a0a2375f71be21"/>
     <element xsi:type="archimate:Capability" name="Страховые выплаты" id="id-e24ce7912ffb466e99a95c1321ec4de0"/>
     <element xsi:type="archimate:Capability" name="Телемедицина" id="id-0989cf0d277142448a7143227f430407"/>
   </folder>
