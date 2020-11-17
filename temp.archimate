@@ -1048,7 +1048,7 @@
       </element>
     </folder>
     <folder name="2. Business Views" id="id-45361a50969d4019b4abc9f4e4644a17">
-      <element xsi:type="archimate:ArchimateDiagramModel" name="Люди" id="id-cd6ccbcec61341d3814c150946702dc5">
+      <element xsi:type="archimate:ArchimateDiagramModel" name="Organization Map" id="id-cd6ccbcec61341d3814c150946702dc5">
         <child xsi:type="archimate:DiagramObject" id="id-f78896cc8619429bb6657be98cb915e6" archimateElement="id-efd14b9bb2f9409fb2e2a076a650ce3e">
           <bounds x="24" y="24" width="120" height="55"/>
         </child>
@@ -1168,5 +1168,26 @@
         </child>
       </element>
     </folder>
+    <folder name="4. Technology Views" id="id-80bbd4c912384da5b67f133c130d34b9">
+      <element xsi:type="archimate:ArchimateDiagramModel" name="Deployment Diagram" id="id-e67eea67c5f04f34a176aedf57f23ef7"/>
+    </folder>
+    <element xsi:type="archimate:ArchimateDiagramModel" name="Navigation" id="id-68e5d2d95d3c4fe1899e3158db44bf70">
+      <child xsi:type="archimate:DiagramModelReference" id="id-cf6f67e8281e4377a4672b63fc10e2a5" fillColor="#f5deaa" model="id-35d49046c6284b18a225666bf3d13b9d">
+        <bounds x="276" y="84" width="145" height="73"/>
+      </child>
+      <child xsi:type="archimate:DiagramModelReference" id="id-86610cfc789a40389f2f18ec63e58da3" fillColor="#ffff80" model="id-cd6ccbcec61341d3814c150946702dc5">
+        <bounds x="120" y="84" width="145" height="73"/>
+      </child>
+      <child xsi:type="archimate:Note" id="id-cadc988cb7d243179c36e71c4870a769" font="1|Segoe UI|14.25|1|WINDOWS|1|-19|0|0|0|700|0|0|0|0|3|2|1|34|Segoe UI" textPosition="1">
+        <bounds x="120" y="24" width="457" height="48"/>
+        <content>eHealth Architecture RUz</content>
+      </child>
+      <child xsi:type="archimate:DiagramModelReference" id="id-46e49563113843bbb02b85c94cb11f04" model="id-e07716d6114a43f78c9c79d1a99ed154">
+        <bounds x="432" y="84" width="145" height="73"/>
+      </child>
+      <child xsi:type="archimate:DiagramModelReference" id="id-c6cdcc30cb7448388134e3317cc81730" fillColor="#a6d0a7" model="id-e67eea67c5f04f34a176aedf57f23ef7">
+        <bounds x="122" y="172" width="455" height="55"/>
+      </child>
+    </element>
   </folder>
 </archimate:model>
