@@ -1339,6 +1339,9 @@
       <child xsi:type="archimate:DiagramModelReference" id="id-c6cdcc30cb7448388134e3317cc81730" fillColor="#a6d0a7" model="id-e67eea67c5f04f34a176aedf57f23ef7">
         <bounds x="122" y="172" width="455" height="55"/>
       </child>
+      <child xsi:type="archimate:DiagramModelReference" id="id-3e9e45819d664d64867b8a1bee2524e2" model="id-9bc90375b2654316bd7c414337112dc4">
+        <bounds x="588" y="84" width="120" height="73"/>
+      </child>
     </element>
   </folder>
 </archimate:model>
