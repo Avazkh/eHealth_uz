@@ -191,7 +191,12 @@
     <folder name="Процессы" id="id-c0322df061834dd6856911858b9a3268"/>
   </folder>
   <folder name="Application" id="id-93de4972964347009abdc883adf23d5c" type="application">
-    <folder name="МИС" id="id-a1f30db28d1941ec875fd5642a4afad6"/>
+    <folder name="МИС" id="id-a1f30db28d1941ec875fd5642a4afad6">
+      <element xsi:type="archimate:ApplicationComponent" name=" Вакцинация" id="id-e1042552f076459f8f9eecbcba49c6b0"/>
+      <element xsi:type="archimate:ApplicationComponent" name="Медицинская информационная система(HIS)" id="id-0b106390c20d48ce9c55988e9f47eca8"/>
+      <element xsi:type="archimate:ApplicationComponent" name="Передача и архивация медицинских (DICOM) изображений (PACS)" id="id-03ff3b20353e4cf8b9be1504f86c6b90"/>
+      <element xsi:type="archimate:ApplicationComponent" name="Электронные рецепты" id="id-91dd5a83d5184e169efac3bf759e03b1"/>
+    </folder>
     <folder name="Электронное Правительство" id="id-dcc9c5a749ea4399b7c203f351f7cc6e">
       <element xsi:type="archimate:ApplicationService" name="База данных справочников и классификаторов" id="id-338c6b96f25b4e96aa1148bd3d7d9dc8"/>
       <element xsi:type="archimate:ApplicationService" name="База данных физических лиц" id="id-7d0305d8b296462db1ac90c42c060b97"/>
@@ -226,39 +231,44 @@
         <element xsi:type="archimate:ApplicationComponent" name="Открытый интерфейс (Open API)" id="id-a522f731f18f418d86ea462f0d75e8d4"/>
       </folder>
     </folder>
-    <element xsi:type="archimate:ApplicationComponent" name="Медицинская информационная система(HIS)" id="id-0b106390c20d48ce9c55988e9f47eca8"/>
-    <element xsi:type="archimate:ApplicationComponent" name="Передача и архивация медицинских (DICOM) изображений (PACS)" id="id-03ff3b20353e4cf8b9be1504f86c6b90"/>
-    <element xsi:type="archimate:ApplicationComponent" name="Электронные рецепты" id="id-91dd5a83d5184e169efac3bf759e03b1"/>
-    <element xsi:type="archimate:ApplicationComponent" name=" Вакцинация" id="id-e1042552f076459f8f9eecbcba49c6b0"/>
-    <element xsi:type="archimate:ApplicationComponent" name="Портал для пациентов(HIS портал)" id="id-a5eaa42b0c8f4ac797fad3caa940a818"/>
-    <element xsi:type="archimate:ApplicationComponent" name="API Gateway" id="id-69cb00cdd10a4fa9975dcebef6284fa0"/>
-    <element xsi:type="archimate:ApplicationComponent" name="Авторизация (OAuth/Open ID)" id="id-91f61076801a46da80f21743c3cb84e6"/>
-    <element xsi:type="archimate:ApplicationComponent" name="Отслеживание (Tracing)" id="id-109df92521154f2ca4f293b355c55f29"/>
-    <element xsi:type="archimate:ApplicationComponent" name="Повторный Вызов (Retry)" id="id-08d3cecdecc04c1f9f27defab7d6d7af"/>
-    <element xsi:type="archimate:ApplicationComponent" name="Кэширование (Caching)" id="id-dea926c2d4a0490e9886a3da2d1d8b0c"/>
-    <element xsi:type="archimate:ApplicationComponent" name="Ограничение Скорости (Rate Limiting)" id="id-f63d0b3440ee4ebeb68c1b49f8b5267e"/>
-    <element xsi:type="archimate:ApplicationService" name="MPI API" id="id-2f6114e10e774586af7a3283b43f8dea"/>
-    <element xsi:type="archimate:ApplicationService" name="Provider API" id="id-9542dec05c0b4152b5aee90d0c40cbc3"/>
-    <element xsi:type="archimate:ApplicationService" name="Pharmacy Org API" id="id-93751054026949cb859b4cd3bb59d727"/>
-    <element xsi:type="archimate:ApplicationService" name="Health Service API" id="id-5cb7fe1cdccc4ac5b8689e68ec142c83"/>
-    <element xsi:type="archimate:ApplicationComponent" name="Управление Сервисами (API Management)" id="id-4052e9aa51ce4430bcef5bd867be09f6"/>
-    <element xsi:type="archimate:ApplicationService" name="FHIR Bulk API" id="id-8f650d715e1a4367b0d11b9b592a67c1"/>
-    <element xsi:type="archimate:ApplicationService" name="Patient Consent API" id="id-fe57d660e6034fc19cd7e026531e56cf"/>
-    <element xsi:type="archimate:ApplicationService" name="CDR API" id="id-8b807d026b734736b40f5bd66cb73945"/>
-    <element xsi:type="archimate:ApplicationService" name="ePrescribe API" id="id-ac2a7e3eca514499901c153901bf2b3f"/>
-    <element xsi:type="archimate:ApplicationService" name="eReferral API" id="id-fe4ada6e4dcf4525a51a689ff3ebe846"/>
-    <element xsi:type="archimate:ApplicationService" name="Telemedicine API" id="id-23fba20656fb4733a7b9555c574f7d95"/>
-    <element xsi:type="archimate:ApplicationService" name="Terminology API" id="id-eac8e82ecfbb4c52b779a5c19bf7213e"/>
-    <element xsi:type="archimate:DataObject" name="Хранилище Данных FHIR" id="id-6cfa9e82077a450c937503bbab4507d1"/>
-    <element xsi:type="archimate:ApplicationService" name="FHIR Facade API" id="id-e25a78c54baa4fde9eac0147d8626275"/>
-    <element xsi:type="archimate:DataObject" name="Хранилище Документов CDA" id="id-6cb457df8c4345d48822374126949a6b"/>
-    <element xsi:type="archimate:DataObject" name="Хранилище Других Данных" id="id-4daf2bd182854d0db9b520e56cc6245d"/>
-    <element xsi:type="archimate:ApplicationComponent" name="SMART-on-FHIR Внешнее приложение" id="id-ef0c367f76f0485c946b0b680fc4af5b"/>
-    <element xsi:type="archimate:ApplicationComponent" name="МИС Поликлиника" id="id-4440dfd9f1e34a40a1406e3c6234b822"/>
-    <element xsi:type="archimate:ApplicationComponent" name="МИС Госпиталь" id="id-e832001dfb0f429a8049fc97da263f82"/>
-    <element xsi:type="archimate:ApplicationComponent" name="МИС Частная клиника/госпиталь /лаборатория" id="id-a26738288bd04f489141d8f7b4c2d121"/>
-    <element xsi:type="archimate:ApplicationService" name="PACS API" id="id-866979fcac474dec915cd53d10842a1b"/>
-    <element xsi:type="archimate:ApplicationService" name="Интеграция с Эл. Правительством API" id="id-15e2f62901234156ab73311f458871f3"/>
+    <folder name="Каталог Сервисов" id="id-c5f8010ae325425f84f0e1ce21a777ed">
+      <element xsi:type="archimate:ApplicationService" name="CDR API" id="id-8b807d026b734736b40f5bd66cb73945"/>
+      <element xsi:type="archimate:ApplicationService" name="ePrescribe API" id="id-ac2a7e3eca514499901c153901bf2b3f"/>
+      <element xsi:type="archimate:ApplicationService" name="eReferral API" id="id-fe4ada6e4dcf4525a51a689ff3ebe846"/>
+      <element xsi:type="archimate:ApplicationService" name="FHIR Bulk API" id="id-8f650d715e1a4367b0d11b9b592a67c1"/>
+      <element xsi:type="archimate:ApplicationService" name="FHIR Facade API" id="id-e25a78c54baa4fde9eac0147d8626275"/>
+      <element xsi:type="archimate:ApplicationService" name="Health Service API" id="id-5cb7fe1cdccc4ac5b8689e68ec142c83"/>
+      <element xsi:type="archimate:ApplicationService" name="MPI API" id="id-2f6114e10e774586af7a3283b43f8dea"/>
+      <element xsi:type="archimate:ApplicationService" name="PACS API" id="id-866979fcac474dec915cd53d10842a1b"/>
+      <element xsi:type="archimate:ApplicationService" name="Patient Consent API" id="id-fe57d660e6034fc19cd7e026531e56cf"/>
+      <element xsi:type="archimate:ApplicationService" name="Pharmacy Org API" id="id-93751054026949cb859b4cd3bb59d727"/>
+      <element xsi:type="archimate:ApplicationService" name="Provider API" id="id-9542dec05c0b4152b5aee90d0c40cbc3"/>
+      <element xsi:type="archimate:ApplicationService" name="Telemedicine API" id="id-23fba20656fb4733a7b9555c574f7d95"/>
+      <element xsi:type="archimate:ApplicationService" name="Terminology API" id="id-eac8e82ecfbb4c52b779a5c19bf7213e"/>
+      <element xsi:type="archimate:ApplicationService" name="Интеграция с Эл. Правительством API" id="id-15e2f62901234156ab73311f458871f3"/>
+    </folder>
+    <folder name="Middleware" id="id-aa6ceed27eae4dcf93abc0321ddfdd5c">
+      <element xsi:type="archimate:ApplicationComponent" name="API Gateway" id="id-69cb00cdd10a4fa9975dcebef6284fa0"/>
+      <element xsi:type="archimate:ApplicationComponent" name="Авторизация (OAuth/Open ID)" id="id-91f61076801a46da80f21743c3cb84e6"/>
+      <element xsi:type="archimate:ApplicationComponent" name="Кэширование (Caching)" id="id-dea926c2d4a0490e9886a3da2d1d8b0c"/>
+      <element xsi:type="archimate:ApplicationComponent" name="Ограничение Скорости (Rate Limiting)" id="id-f63d0b3440ee4ebeb68c1b49f8b5267e"/>
+      <element xsi:type="archimate:ApplicationComponent" name="Отслеживание (Tracing)" id="id-109df92521154f2ca4f293b355c55f29"/>
+      <element xsi:type="archimate:ApplicationComponent" name="Повторный Вызов (Retry)" id="id-08d3cecdecc04c1f9f27defab7d6d7af"/>
+      <element xsi:type="archimate:ApplicationComponent" name="Управление Сервисами (API Management)" id="id-4052e9aa51ce4430bcef5bd867be09f6"/>
+    </folder>
+    <folder name="Внешние Приложения" id="id-b34276bc6d314faf8b94cd998a5bca8b">
+      <element xsi:type="archimate:ApplicationComponent" name="SMART-on-FHIR Внешнее приложение" id="id-ef0c367f76f0485c946b0b680fc4af5b"/>
+      <element xsi:type="archimate:ApplicationComponent" name="МИС Госпиталь" id="id-e832001dfb0f429a8049fc97da263f82"/>
+      <element xsi:type="archimate:ApplicationComponent" name="МИС Поликлиника" id="id-4440dfd9f1e34a40a1406e3c6234b822"/>
+      <element xsi:type="archimate:ApplicationComponent" name="МИС Частная клиника/госпиталь /лаборатория" id="id-a26738288bd04f489141d8f7b4c2d121"/>
+      <element xsi:type="archimate:ApplicationComponent" name="Портал для пациентов(HIS портал)" id="id-a5eaa42b0c8f4ac797fad3caa940a818"/>
+    </folder>
+    <folder name="Хранилища" id="id-cbddbf5942424a25814009e730e22cc8">
+      <element xsi:type="archimate:DataObject" name="Хранилище Данных FHIR" id="id-6cfa9e82077a450c937503bbab4507d1"/>
+      <element xsi:type="archimate:DataObject" name="Хранилище Документов CDA" id="id-6cb457df8c4345d48822374126949a6b"/>
+      <element xsi:type="archimate:DataObject" name="Хранилище Других Данных" id="id-4daf2bd182854d0db9b520e56cc6245d"/>
+    </folder>
+    <folder name="Подписка" id="id-48873a4fc76b42caa7f14f96e40a8fce"/>
   </folder>
   <folder name="Technology &amp; Physical" id="id-87f594b2c8754629bbda6331bd3a60ab" type="technology"/>
   <folder name="Motivation" id="id-28b72a8d1cbf438993885f24a2e15ecf" type="motivation"/>
@@ -271,6 +281,7 @@
     <element xsi:type="archimate:Grouping" name="Управление Доступом (IAM)" id="id-46aae641bb3644788ef0c389f4d0678f"/>
     <element xsi:type="archimate:Grouping" name="Клинические Хранилища" id="id-f783873ffa854069b8d3c694f1b4c968"/>
     <element xsi:type="archimate:Location" name="Центр Данных" id="id-2f1dfa50de6f40e1a15ee72d5cd58228"/>
+    <element xsi:type="archimate:Grouping" name="Управление Подписками" id="id-4f228a251dc8468680253a046255378f"/>
   </folder>
   <folder name="Relations" id="id-412aa3eaea564378bcbf727083e24193" type="relations">
     <element xsi:type="archimate:AssociationRelationship" id="id-179ca82e41e9499ab95ad296df8baaa8" source="id-3b6ef62086ea4220aca7366cf2d37a40" target="id-b3ba090f313b48ef95302806143e821a"/>
@@ -1217,9 +1228,9 @@
           </child>
         </child>
       </element>
-      <element xsi:type="archimate:ArchimateDiagramModel" name="Solution Context Ver 2" id="id-9bc90375b2654316bd7c414337112dc4" viewpoint="application_cooperation">
+      <element xsi:type="archimate:ArchimateDiagramModel" name="Application Landscape" id="id-9bc90375b2654316bd7c414337112dc4" viewpoint="application_cooperation">
         <child xsi:type="archimate:DiagramObject" id="id-e3952664e3c9402fbc3c4abbbe2c3ff2" archimateElement="id-2f1dfa50de6f40e1a15ee72d5cd58228">
-          <bounds x="24" y="204" width="961" height="661"/>
+          <bounds x="24" y="204" width="961" height="829"/>
           <child xsi:type="archimate:Group" id="id-5f9f5cd327ea4351ad7efc24f4f6fd7d" name="Интеграция (Middleware)" textAlignment="1">
             <bounds x="12" y="24" width="937" height="169"/>
             <child xsi:type="archimate:DiagramObject" id="id-8415dc2f11144526879034746d31845b" targetConnections="id-b7449f0131494ee9947a877fe95ab4ca id-6b0d866230f54902aedd4203b4f51c5a id-4123eadabb00481db9ec373d40a70875 id-86f0d5802ec241da86a6a8d46b824679 id-516397f18093438680560bee108eb746 id-084c215fba4a4868871da873f5a0731a id-23ba0783004041e2ba47da8e3409b27d" archimateElement="id-69cb00cdd10a4fa9975dcebef6284fa0">
@@ -1293,7 +1304,7 @@
             </child>
           </child>
           <child xsi:type="archimate:DiagramObject" id="id-4a5b89591b66468c82c0e96033f5e124" textAlignment="1" archimateElement="id-46aae641bb3644788ef0c389f4d0678f">
-            <bounds x="12" y="384" width="529" height="121"/>
+            <bounds x="12" y="516" width="529" height="121"/>
             <sourceConnection xsi:type="archimate:Connection" id="id-b0cd02704632468d9b894ceaeaa4b56c" source="id-4a5b89591b66468c82c0e96033f5e124" target="id-49e3a95b12414efd85cb728dd79f254e" archimateRelationship="id-61c50660a9234a2c850f112d849b8de7"/>
             <sourceConnection xsi:type="archimate:Connection" id="id-aa95d87fb2dd426489febf1490aad1ff" source="id-4a5b89591b66468c82c0e96033f5e124" target="id-543a2d3264f1467797b09eecff1f0925" archimateRelationship="id-7be7fcdd023b4db088268152d67fab2b"/>
             <sourceConnection xsi:type="archimate:Connection" id="id-19c3a68305964ebf967064b9e099d170" source="id-4a5b89591b66468c82c0e96033f5e124" target="id-b3f69b36b98c467e8c72f639ed81b374" archimateRelationship="id-21b9f948d4f140279585166659826e3f"/>
@@ -1308,7 +1319,7 @@
             </child>
           </child>
           <child xsi:type="archimate:DiagramObject" id="id-75cf8e38ccaf44ca853d13f27974df9f" textAlignment="1" archimateElement="id-f783873ffa854069b8d3c694f1b4c968">
-            <bounds x="12" y="516" width="409" height="121"/>
+            <bounds x="12" y="648" width="529" height="121"/>
             <sourceConnection xsi:type="archimate:Connection" id="id-df3e4cb81a864db7805ce195095b1538" source="id-75cf8e38ccaf44ca853d13f27974df9f" target="id-145be4d267b0415fbcccdf0e00d40b2f" archimateRelationship="id-2224286ad339457bb5e0be9bae823ffb"/>
             <sourceConnection xsi:type="archimate:Connection" id="id-919fadbf7ae74011997ad4619862438c" source="id-75cf8e38ccaf44ca853d13f27974df9f" target="id-204b61266d6c45db8906d2ba65a43df3" archimateRelationship="id-ac48e2a9589d4d8c97440a0bb942bb8f"/>
             <sourceConnection xsi:type="archimate:Connection" id="id-f9ebf5d92e944f7d9a2e3b7c3773dcca" source="id-75cf8e38ccaf44ca853d13f27974df9f" target="id-7c00d86a775f400595ea451c6a18f71c" archimateRelationship="id-4e5bc2ce7d544d4d8218dd1ec1b2fa88"/>
@@ -1323,7 +1334,7 @@
             </child>
           </child>
           <child xsi:type="archimate:DiagramObject" id="id-3df51ab7b2d54207b7f696ca05e6450b" textAlignment="1" archimateElement="id-5e84c7ae971e445eb6a4f3740153f22d">
-            <bounds x="579" y="384" width="370" height="193"/>
+            <bounds x="564" y="516" width="370" height="193"/>
             <sourceConnection xsi:type="archimate:Connection" id="id-c6abeef24a48495e95f501134bc52ae8" source="id-3df51ab7b2d54207b7f696ca05e6450b" target="id-a6fb0d9dc4364031af75f84bc72168af" archimateRelationship="id-e7c6214121e7472aac27d97ce9a3c629"/>
             <sourceConnection xsi:type="archimate:Connection" id="id-ccf598355b5a435b970ed6eb68ca2af3" source="id-3df51ab7b2d54207b7f696ca05e6450b" target="id-cd3e29dc18e94a0a86f4695d9985ea73" archimateRelationship="id-eb90989f563b4a7c93178fd25fec6385"/>
             <sourceConnection xsi:type="archimate:Connection" id="id-76212d3eaabf419c9f5d2836c739d667" source="id-3df51ab7b2d54207b7f696ca05e6450b" target="id-5ed76b402d1c4092b9d537943b340306" archimateRelationship="id-41ca4f48830847c6b7e28336166ce3bd"/>
@@ -1336,6 +1347,9 @@
             <child xsi:type="archimate:DiagramObject" id="id-5ed76b402d1c4092b9d537943b340306" targetConnections="id-76212d3eaabf419c9f5d2836c739d667" archimateElement="id-e25a78c54baa4fde9eac0147d8626275">
               <bounds x="12" y="24" width="120" height="55"/>
             </child>
+          </child>
+          <child xsi:type="archimate:DiagramObject" id="id-3268198625fb405cae2845514e7ebfdd" textAlignment="1" archimateElement="id-4f228a251dc8468680253a046255378f">
+            <bounds x="12" y="384" width="937" height="121"/>
           </child>
         </child>
         <child xsi:type="archimate:Group" id="id-99852608b90449c68fb028673e78517a" name="Presentation Layer / Access Channels" textAlignment="1">
@@ -1390,14 +1404,11 @@
         <bounds x="120" y="24" width="457" height="48"/>
         <content>eHealth Architecture RUz</content>
       </child>
-      <child xsi:type="archimate:DiagramModelReference" id="id-46e49563113843bbb02b85c94cb11f04" model="id-e07716d6114a43f78c9c79d1a99ed154">
-        <bounds x="432" y="84" width="145" height="73"/>
-      </child>
       <child xsi:type="archimate:DiagramModelReference" id="id-c6cdcc30cb7448388134e3317cc81730" fillColor="#a6d0a7" model="id-e67eea67c5f04f34a176aedf57f23ef7">
         <bounds x="122" y="172" width="455" height="55"/>
       </child>
       <child xsi:type="archimate:DiagramModelReference" id="id-3e9e45819d664d64867b8a1bee2524e2" model="id-9bc90375b2654316bd7c414337112dc4">
-        <bounds x="588" y="84" width="120" height="73"/>
+        <bounds x="432" y="84" width="145" height="73"/>
       </child>
     </element>
   </folder>
