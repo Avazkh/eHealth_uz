@@ -269,6 +269,9 @@
       <element xsi:type="archimate:DataObject" name="Хранилище Других Данных" id="id-4daf2bd182854d0db9b520e56cc6245d"/>
     </folder>
     <folder name="Подписка" id="id-48873a4fc76b42caa7f14f96e40a8fce"/>
+    <element xsi:type="archimate:ApplicationComponent" name="Брокер" id="id-acbc7302613e41c3af4faed2243bc688"/>
+    <element xsi:type="archimate:ApplicationComponent" name="Stream" id="id-72cc7095c97040aea2dbb437a98b3bbd"/>
+    <element xsi:type="archimate:ApplicationComponent" name="Topic" id="id-cddf9f866e2f42fe82a579903d212ca4"/>
   </folder>
   <folder name="Technology &amp; Physical" id="id-87f594b2c8754629bbda6331bd3a60ab" type="technology"/>
   <folder name="Motivation" id="id-28b72a8d1cbf438993885f24a2e15ecf" type="motivation"/>
@@ -441,6 +444,9 @@
     <element xsi:type="archimate:FlowRelationship" id="id-a755922417764b67a4123fd1ff5949c3" source="id-a26738288bd04f489141d8f7b4c2d121" target="id-69cb00cdd10a4fa9975dcebef6284fa0"/>
     <element xsi:type="archimate:FlowRelationship" id="id-e1bc298921ac49f7a64bcebb08b010eb" source="id-e832001dfb0f429a8049fc97da263f82" target="id-69cb00cdd10a4fa9975dcebef6284fa0"/>
     <element xsi:type="archimate:FlowRelationship" id="id-707e3ff17df2494daec47482c6f77de0" source="id-4052e9aa51ce4430bcef5bd867be09f6" target="id-69cb00cdd10a4fa9975dcebef6284fa0"/>
+    <element xsi:type="archimate:AggregationRelationship" id="id-cced7cbe1f1746bd890dc3747f6d3fa2" source="id-4f228a251dc8468680253a046255378f" target="id-acbc7302613e41c3af4faed2243bc688"/>
+    <element xsi:type="archimate:AggregationRelationship" id="id-a066eb8c598a4ce58612024f3eabcfdb" source="id-4f228a251dc8468680253a046255378f" target="id-72cc7095c97040aea2dbb437a98b3bbd"/>
+    <element xsi:type="archimate:CompositionRelationship" id="id-129424f0f0054f2fa1676a02ba1d4633" source="id-4f228a251dc8468680253a046255378f" target="id-cddf9f866e2f42fe82a579903d212ca4"/>
   </folder>
   <folder name="Views" id="id-c5b8b6449f1e4f249a3492ee4d95b6be" type="diagrams">
     <folder name="1. Strategy Views" id="id-c74ed8d99e5648699f4a6423f5ff243d">
@@ -1350,6 +1356,18 @@
           </child>
           <child xsi:type="archimate:DiagramObject" id="id-3268198625fb405cae2845514e7ebfdd" textAlignment="1" archimateElement="id-4f228a251dc8468680253a046255378f">
             <bounds x="12" y="384" width="937" height="121"/>
+            <sourceConnection xsi:type="archimate:Connection" id="id-5e061220bcce494fb7d691c0e8e7a89e" source="id-3268198625fb405cae2845514e7ebfdd" target="id-f5b7a970beab43138950732d2c2c4b5b" archimateRelationship="id-cced7cbe1f1746bd890dc3747f6d3fa2"/>
+            <sourceConnection xsi:type="archimate:Connection" id="id-861fd3f168f943669e7fa6a49580336e" source="id-3268198625fb405cae2845514e7ebfdd" target="id-533fea8c8aa34ad5b1c53e6a01cc2b54" archimateRelationship="id-a066eb8c598a4ce58612024f3eabcfdb"/>
+            <sourceConnection xsi:type="archimate:Connection" id="id-668857ec8c1343a4bc436b8c76831645" source="id-3268198625fb405cae2845514e7ebfdd" target="id-0be588c28b70498dacec6101fe34867a" archimateRelationship="id-129424f0f0054f2fa1676a02ba1d4633"/>
+            <child xsi:type="archimate:DiagramObject" id="id-f5b7a970beab43138950732d2c2c4b5b" targetConnections="id-5e061220bcce494fb7d691c0e8e7a89e" archimateElement="id-acbc7302613e41c3af4faed2243bc688">
+              <bounds x="24" y="36" width="120" height="55"/>
+            </child>
+            <child xsi:type="archimate:DiagramObject" id="id-533fea8c8aa34ad5b1c53e6a01cc2b54" targetConnections="id-861fd3f168f943669e7fa6a49580336e" archimateElement="id-72cc7095c97040aea2dbb437a98b3bbd">
+              <bounds x="156" y="36" width="120" height="55"/>
+            </child>
+            <child xsi:type="archimate:DiagramObject" id="id-0be588c28b70498dacec6101fe34867a" targetConnections="id-668857ec8c1343a4bc436b8c76831645" archimateElement="id-cddf9f866e2f42fe82a579903d212ca4">
+              <bounds x="288" y="36" width="120" height="55"/>
+            </child>
           </child>
         </child>
         <child xsi:type="archimate:Group" id="id-99852608b90449c68fb028673e78517a" name="Presentation Layer / Access Channels" textAlignment="1">
