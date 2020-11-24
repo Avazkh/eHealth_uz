@@ -4,11 +4,9 @@
     <folder name="1. Каналы Доступа" id="id-2648e85a5ac94b2db7b44ef7a7d81308">
       <element xsi:type="archimate:Capability" name="Мобильные приложения" id="id-b3ba090f313b48ef95302806143e821a"/>
       <element xsi:type="archimate:Capability" name="Веб порталы" id="id-0f3cabd729204c90b09acadb4eb7d1b0"/>
-      <element xsi:type="archimate:Capability" name="IoT" id="id-e9a8d0c98a7e4931930ab8f5af800e39"/>
       <element xsi:type="archimate:Capability" name="Аналитические Инструменты" id="id-d56f0d98a2504ac5a34111e0d26bef81"/>
-      <element xsi:type="archimate:Capability" name="Индивид. Датчики" id="id-80ff8bba44454908ad7a5fb05db06214"/>
+      <element xsi:type="archimate:Capability" name="Устройства Сбора Информации" id="id-80ff8bba44454908ad7a5fb05db06214"/>
       <element xsi:type="archimate:Capability" name="Каналы доступа" id="id-e43291ebb99f4e5d94e4381669ab7d29"/>
-      <element xsi:type="archimate:Capability" name="Клинические порталы" id="id-703f3ad0547647bcbadf985a6220f152"/>
       <element xsi:type="archimate:Capability" name="Спец. системы GUI (толстый клиент)" id="id-2003b80aa9bf4cce9e64d3f1e5ad30f6"/>
     </folder>
     <folder name="2. Управление Единым Профайлом Пациента" id="id-fc4d104b72d646a38ecf015a46ef6b2a">
@@ -44,7 +42,7 @@
       <element xsi:type="archimate:Capability" name="Управление Лечебно-Диагностической деятельностью" id="id-682aed29c9634ebdb3501132b4644682"/>
       <element xsi:type="archimate:Capability" name="Аналитика и Отчетность" id="id-817d1b04eee94fe583156c9f98612ff2"/>
       <element xsi:type="archimate:Capability" name="Поддержка Принятия Решений" id="id-862049f953244200a3b6a325f911a8ec"/>
-      <element xsi:type="archimate:Capability" name="Управление Документооборотом" id="id-812acf90eac647709526e631f9fc3f9c"/>
+      <element xsi:type="archimate:Capability" name="Управление Клиническими Документами" id="id-812acf90eac647709526e631f9fc3f9c"/>
       <element xsi:type="archimate:Capability" name="Управление назначениями (CPOE)" id="id-fe685117be1e44df859a7795781d9d45"/>
       <element xsi:type="archimate:Capability" name="Управление Радиологическими Исследованиями" id="id-57ab6210500a4c4aa32b43d1cb7aaa9f"/>
       <element xsi:type="archimate:Capability" name="Управление Регистрацией и Передвижением Пациентов" id="id-aba34244747846529bce9c40aa87a36f"/>
@@ -242,7 +240,6 @@
       <element xsi:type="archimate:ApplicationService" name="Эл. Рецепт (ePrescription) API" id="id-ac2a7e3eca514499901c153901bf2b3f"/>
       <element xsi:type="archimate:ApplicationService" name="Направление к Специалисту (eReferral) API" id="id-fe4ada6e4dcf4525a51a689ff3ebe846"/>
       <element xsi:type="archimate:ApplicationService" name="FHIR Bulk API" id="id-8f650d715e1a4367b0d11b9b592a67c1"/>
-      <element xsi:type="archimate:ApplicationService" name="FHIR Facade API" id="id-e25a78c54baa4fde9eac0147d8626275"/>
       <element xsi:type="archimate:ApplicationService" name="Каталог Сервисов (eService) API" id="id-5cb7fe1cdccc4ac5b8689e68ec142c83"/>
       <element xsi:type="archimate:ApplicationService" name="Поиск Пациентов (MPI)API" id="id-2f6114e10e774586af7a3283b43f8dea"/>
       <element xsi:type="archimate:ApplicationService" name="PACS API" id="id-866979fcac474dec915cd53d10842a1b"/>
@@ -274,9 +271,9 @@
       <element xsi:type="archimate:ApplicationService" name="API Interface" id="id-f73c1aa5b9364e998dd51b5f02cb034e"/>
     </folder>
     <folder name="Хранилища" id="id-cbddbf5942424a25814009e730e22cc8">
-      <element xsi:type="archimate:DataObject" name="Хранилище Данных FHIR" id="id-6cfa9e82077a450c937503bbab4507d1"/>
-      <element xsi:type="archimate:DataObject" name="Хранилище Документов CDA" id="id-6cb457df8c4345d48822374126949a6b"/>
-      <element xsi:type="archimate:DataObject" name="Хранилище Других Данных" id="id-4daf2bd182854d0db9b520e56cc6245d"/>
+      <element xsi:type="archimate:DataObject" name="Хранилище Структурированных Данных" id="id-6cfa9e82077a450c937503bbab4507d1"/>
+      <element xsi:type="archimate:DataObject" name="Хранилище Неструктурированных Данных" id="id-6cb457df8c4345d48822374126949a6b"/>
+      <element xsi:type="archimate:DataObject" name="Хранилище Медиа " id="id-4daf2bd182854d0db9b520e56cc6245d"/>
     </folder>
     <folder name="Подписка" id="id-48873a4fc76b42caa7f14f96e40a8fce">
       <element xsi:type="archimate:ApplicationComponent" name="Брокер" id="id-acbc7302613e41c3af4faed2243bc688"/>
@@ -334,6 +331,10 @@ http://bemor.ssv.uz/login&#xD;
     <element xsi:type="archimate:ApplicationService" name="API Interface" id="id-efabfe5822884e31a4f65c6c101bdb9b"/>
     <element xsi:type="archimate:ApplicationService" name="API Interface" id="id-07fd182c1f9645f89f3bb7a82ae57f2b"/>
     <element xsi:type="archimate:ApplicationService" name="API Interface " id="id-14bac5747b254e7f892e4419bef64a2a"/>
+    <element xsi:type="archimate:ApplicationComponent" id="id-ed4c6b0633ae498680b35df0233ef86e"/>
+    <element xsi:type="archimate:ApplicationComponent" name="Оркестрация/ Шина Данных (ESB)" id="id-d4f57c6c38cb42b6b91805cb9947ff25"/>
+    <element xsi:type="archimate:ApplicationComponent" name="Номенклатуры и Классификаторы" id="id-fa12ef5ece5441e5bf2ee876cd1bb139"/>
+    <element xsi:type="archimate:ApplicationComponent" name="Реестр Медикаментов" id="id-fb139b7809984b4ebf5277775d98f131"/>
   </folder>
   <folder name="Technology &amp; Physical" id="id-87f594b2c8754629bbda6331bd3a60ab" type="technology"/>
   <folder name="Motivation" id="id-28b72a8d1cbf438993885f24a2e15ecf" type="motivation"/>
@@ -343,10 +344,11 @@ http://bemor.ssv.uz/login&#xD;
   <folder name="Other" id="id-3d0f2106e5fe4bfc9165167c7ba714bc" type="other">
     <element xsi:type="archimate:Grouping" name="Специализированные ИС (Downstream)" id="id-5e84c7ae971e445eb6a4f3740153f22d"/>
     <element xsi:type="archimate:Grouping" name="Пользовательские ИС" id="id-696a9e9f2fc24b7f839ab84cc15cb865"/>
-    <element xsi:type="archimate:Grouping" name="Управление Доступом (IAM)" id="id-46aae641bb3644788ef0c389f4d0678f"/>
+    <element xsi:type="archimate:Grouping" name="Управление Доступом (Identity and Access Management)" id="id-46aae641bb3644788ef0c389f4d0678f"/>
     <element xsi:type="archimate:Grouping" name="Клинические Хранилища Данных" id="id-f783873ffa854069b8d3c694f1b4c968"/>
     <element xsi:type="archimate:Location" name="Центр Данных" id="id-2f1dfa50de6f40e1a15ee72d5cd58228"/>
     <element xsi:type="archimate:Grouping" name="Управление Подписками" id="id-4f228a251dc8468680253a046255378f"/>
+    <element xsi:type="archimate:Grouping" name="Клинические Реестры" id="id-1f82f1b4100745688029640517c7d38c"/>
   </folder>
   <folder name="Relations" id="id-412aa3eaea564378bcbf727083e24193" type="relations">
     <element xsi:type="archimate:AssociationRelationship" id="id-179ca82e41e9499ab95ad296df8baaa8" source="id-3b6ef62086ea4220aca7366cf2d37a40" target="id-b3ba090f313b48ef95302806143e821a"/>
@@ -354,11 +356,8 @@ http://bemor.ssv.uz/login&#xD;
     <element xsi:type="archimate:SpecializationRelationship" id="id-6e2b34a13a6f42b999f06353a279b5fd" source="id-b3ba090f313b48ef95302806143e821a" target="id-e43291ebb99f4e5d94e4381669ab7d29"/>
     <element xsi:type="archimate:SpecializationRelationship" id="id-f546764d951d4c4e994b4bb0332d19ea" source="id-0f3cabd729204c90b09acadb4eb7d1b0" target="id-e43291ebb99f4e5d94e4381669ab7d29"/>
     <element xsi:type="archimate:SpecializationRelationship" id="id-80e9f2a6d8a249a9bd7d25d9e10a01b4" source="id-80ff8bba44454908ad7a5fb05db06214" target="id-e43291ebb99f4e5d94e4381669ab7d29"/>
-    <element xsi:type="archimate:SpecializationRelationship" id="id-f010e84dedb249b28bb46a1e1a3dbcfc" source="id-703f3ad0547647bcbadf985a6220f152" target="id-e43291ebb99f4e5d94e4381669ab7d29"/>
     <element xsi:type="archimate:SpecializationRelationship" id="id-81a68296ef5148e084dcac172d7230f8" source="id-2003b80aa9bf4cce9e64d3f1e5ad30f6" target="id-e43291ebb99f4e5d94e4381669ab7d29"/>
-    <element xsi:type="archimate:SpecializationRelationship" id="id-c8a6c3c83ac442fc806cbba71692f75e" source="id-e9a8d0c98a7e4931930ab8f5af800e39" target="id-e43291ebb99f4e5d94e4381669ab7d29"/>
     <element xsi:type="archimate:SpecializationRelationship" id="id-118c870dbfc84a208b9e953e2c74fff6" source="id-d56f0d98a2504ac5a34111e0d26bef81" target="id-e43291ebb99f4e5d94e4381669ab7d29"/>
-    <element xsi:type="archimate:AssociationRelationship" id="id-3dbaa63d54874cc6b6c587c469c5474a" source="id-efd14b9bb2f9409fb2e2a076a650ce3e" target="id-703f3ad0547647bcbadf985a6220f152"/>
     <element xsi:type="archimate:AssociationRelationship" id="id-d73f35d100dc4bd0b49f3074845e24d6" source="id-5c1a6ff079644ab3b1ea5669cabe9117" target="id-b3ba090f313b48ef95302806143e821a"/>
     <element xsi:type="archimate:AssociationRelationship" id="id-894eab535f3d4b278d3fe2caeb30efe4" source="id-d40d850273ab41b099fade3d0b03222c" target="id-2003b80aa9bf4cce9e64d3f1e5ad30f6"/>
     <element xsi:type="archimate:AssociationRelationship" id="id-4769e559794e428fa318e617d6396be7" source="id-3b6ef62086ea4220aca7366cf2d37a40" target="id-0f3cabd729204c90b09acadb4eb7d1b0"/>
@@ -382,7 +381,6 @@ http://bemor.ssv.uz/login&#xD;
     <element xsi:type="archimate:SpecializationRelationship" id="id-914d38237de24e19ab16c8c63fb6d4e0" source="id-b2367786604648e99b073c911cffa6fe" target="id-9663ef2932d145e6bb94c5f91f285903"/>
     <element xsi:type="archimate:SpecializationRelationship" id="id-578fa13398f643dc92f1fbdde37ac340" source="id-9fc6df56787a4946bbccd4de92e3bfc4" target="id-682aed29c9634ebdb3501132b4644682"/>
     <element xsi:type="archimate:AssociationRelationship" id="id-39b5e26b27a64c259b71c37ec4717b8b" source="id-efd14b9bb2f9409fb2e2a076a650ce3e" target="id-b3ba090f313b48ef95302806143e821a"/>
-    <element xsi:type="archimate:AssociationRelationship" id="id-45d5e83a0200400cbc63e176c4e95be3" source="id-5c1a6ff079644ab3b1ea5669cabe9117" target="id-703f3ad0547647bcbadf985a6220f152"/>
     <element xsi:type="archimate:SpecializationRelationship" id="id-fd2a87363b714a8c8d5c4a3554c293ef" source="id-81bae417f23a493da053ff556a22be8a" target="id-9663ef2932d145e6bb94c5f91f285903"/>
     <element xsi:type="archimate:SpecializationRelationship" id="id-aa54066857524ff2b038277b3eff1d54" source="id-865657398f9e490eac14fe2613eeb28c" target="id-14b00fe686e443b49b053d2f78069495"/>
     <element xsi:type="archimate:SpecializationRelationship" id="id-36806055935440128b5ac681419cc6a5" source="id-44a39eb84c9947f2b05f26f73c4c0201" target="id-14b00fe686e443b49b053d2f78069495"/>
@@ -477,7 +475,6 @@ http://bemor.ssv.uz/login&#xD;
     <element xsi:type="archimate:SpecializationRelationship" id="id-7a9ebb9325d54eef96ca1931ab06ae01" source="id-1a30bd8894f8447bbd76e65553fd8835" target="id-aae40b80271644f9b692e1ff9b6e89da"/>
     <element xsi:type="archimate:AggregationRelationship" id="id-c9e3e441d657453c9baba913051b1c74" source="id-05f2b4d1c58e43568b1c83fc24819b3e" target="id-5227e64fd4024bb9898a306de61e26c8"/>
     <element xsi:type="archimate:SpecializationRelationship" id="id-eb82889eb4634900973f63e730258140" source="id-72fd90e28434432dbc84908d1aeb4ebf" target="id-05f2b4d1c58e43568b1c83fc24819b3e"/>
-    <element xsi:type="archimate:AssociationRelationship" id="id-fd68971107a34ff0a7cb4cf2dd205593" source="id-d40d850273ab41b099fade3d0b03222c" target="id-703f3ad0547647bcbadf985a6220f152"/>
     <element xsi:type="archimate:AssociationRelationship" id="id-9e9dc765531642cbb20b78ccd6fd80dc" source="id-d40d850273ab41b099fade3d0b03222c" target="id-b3ba090f313b48ef95302806143e821a"/>
     <element xsi:type="archimate:CompositionRelationship" id="id-e7c6214121e7472aac27d97ce9a3c629" source="id-5e84c7ae971e445eb6a4f3740153f22d" target="id-0b106390c20d48ce9c55988e9f47eca8"/>
     <element xsi:type="archimate:CompositionRelationship" id="id-eb90989f563b4a7c93178fd25fec6385" source="id-5e84c7ae971e445eb6a4f3740153f22d" target="id-03ff3b20353e4cf8b9be1504f86c6b90"/>
@@ -496,7 +493,6 @@ http://bemor.ssv.uz/login&#xD;
     <element xsi:type="archimate:CompositionRelationship" id="id-7be7fcdd023b4db088268152d67fab2b" source="id-46aae641bb3644788ef0c389f4d0678f" target="id-6a20e66ea3ed434ca712419665dae294"/>
     <element xsi:type="archimate:CompositionRelationship" id="id-21b9f948d4f140279585166659826e3f" source="id-46aae641bb3644788ef0c389f4d0678f" target="id-b8c2805bdf964ab9a453a37f2efd252a"/>
     <element xsi:type="archimate:AggregationRelationship" id="id-2224286ad339457bb5e0be9bae823ffb" source="id-f783873ffa854069b8d3c694f1b4c968" target="id-6cfa9e82077a450c937503bbab4507d1"/>
-    <element xsi:type="archimate:AggregationRelationship" id="id-41ca4f48830847c6b7e28336166ce3bd" source="id-5e84c7ae971e445eb6a4f3740153f22d" target="id-e25a78c54baa4fde9eac0147d8626275"/>
     <element xsi:type="archimate:AggregationRelationship" id="id-ac48e2a9589d4d8c97440a0bb942bb8f" source="id-f783873ffa854069b8d3c694f1b4c968" target="id-6cb457df8c4345d48822374126949a6b"/>
     <element xsi:type="archimate:AggregationRelationship" id="id-4e5bc2ce7d544d4d8218dd1ec1b2fa88" source="id-f783873ffa854069b8d3c694f1b4c968" target="id-4daf2bd182854d0db9b520e56cc6245d"/>
     <element xsi:type="archimate:FlowRelationship" id="id-6095093ca31f416fa88e03316864f80f" source="id-e28cafa498414e04805a68ba7868c378" target="id-69cb00cdd10a4fa9975dcebef6284fa0"/>
@@ -518,7 +514,7 @@ http://bemor.ssv.uz/login&#xD;
         <child xsi:type="archimate:DiagramObject" id="id-3d79e2b81e3a4773b53ea1bc076f3dd9" archimateElement="id-3b6ef62086ea4220aca7366cf2d37a40">
           <bounds x="120" y="24" width="120" height="55"/>
         </child>
-        <child xsi:type="archimate:DiagramObject" id="id-400c67af783a4df6a8cd034d24cb5473" targetConnections="id-59be446af66443ecba1bd909ec08a25a id-205a720492dc48168ec51717bf006a54 id-8cf3bcedc56a4579bd457463ca9a5bbf id-fc3b1d3f3b0a4b6591bd6e045b84f141" archimateElement="id-e43291ebb99f4e5d94e4381669ab7d29">
+        <child xsi:type="archimate:DiagramObject" id="id-400c67af783a4df6a8cd034d24cb5473" targetConnections="id-59be446af66443ecba1bd909ec08a25a id-205a720492dc48168ec51717bf006a54 id-8cf3bcedc56a4579bd457463ca9a5bbf id-fc3b1d3f3b0a4b6591bd6e045b84f141 id-6a411817adae4246b9939c102d02bac7" archimateElement="id-e43291ebb99f4e5d94e4381669ab7d29">
           <bounds x="205" y="96" width="901" height="133"/>
           <child xsi:type="archimate:DiagramObject" id="id-c4e0463f056c46e19c70d1f23d5a6716" archimateElement="id-b3ba090f313b48ef95302806143e821a">
             <bounds x="252" y="60" width="109" height="55"/>
@@ -535,6 +531,10 @@ http://bemor.ssv.uz/login&#xD;
           <child xsi:type="archimate:DiagramObject" id="id-be707360129942b18e3d6c32c09c2c82" archimateElement="id-d56f0d98a2504ac5a34111e0d26bef81">
             <bounds x="600" y="60" width="125" height="55"/>
             <sourceConnection xsi:type="archimate:Connection" id="id-fc3b1d3f3b0a4b6591bd6e045b84f141" source="id-be707360129942b18e3d6c32c09c2c82" target="id-400c67af783a4df6a8cd034d24cb5473" archimateRelationship="id-118c870dbfc84a208b9e953e2c74fff6"/>
+          </child>
+          <child xsi:type="archimate:DiagramObject" id="id-a3e8180783b84e1f8f79fe6c49d0eb6d" archimateElement="id-80ff8bba44454908ad7a5fb05db06214">
+            <bounds x="12" y="60" width="109" height="55"/>
+            <sourceConnection xsi:type="archimate:Connection" id="id-6a411817adae4246b9939c102d02bac7" source="id-a3e8180783b84e1f8f79fe6c49d0eb6d" target="id-400c67af783a4df6a8cd034d24cb5473" archimateRelationship="id-80e9f2a6d8a249a9bd7d25d9e10a01b4"/>
           </child>
         </child>
         <child xsi:type="archimate:DiagramObject" id="id-1f4e83d892604e6e9d92e2f9a1b91d59" archimateElement="id-efd14b9bb2f9409fb2e2a076a650ce3e">
@@ -913,15 +913,6 @@ http://bemor.ssv.uz/login&#xD;
         <child xsi:type="archimate:DiagramObject" id="id-998a4a8ab1f747378030a47c3ae4f724" archimateElement="id-caa999bd73094dec8c44063d8b88245d">
           <bounds x="36" y="96" width="120" height="97"/>
         </child>
-        <child xsi:type="archimate:DiagramObject" id="id-a3e8180783b84e1f8f79fe6c49d0eb6d" archimateElement="id-80ff8bba44454908ad7a5fb05db06214">
-          <bounds x="24" y="240" width="109" height="55"/>
-        </child>
-        <child xsi:type="archimate:DiagramObject" id="id-44fd43b97fb04df6bf655128883f4004" archimateElement="id-e9a8d0c98a7e4931930ab8f5af800e39">
-          <bounds x="65" y="312" width="61" height="55"/>
-        </child>
-        <child xsi:type="archimate:DiagramObject" id="id-4fa109ed669142b58d0381207f2b9093" archimateElement="id-703f3ad0547647bcbadf985a6220f152">
-          <bounds x="24" y="417" width="121" height="55"/>
-        </child>
       </element>
       <element xsi:type="archimate:ArchimateDiagramModel" name="Управление Лабораторными Исследованиями" id="id-32cc7a8407204ce2852f9268d8f9500a" viewpoint="capability">
         <child xsi:type="archimate:DiagramObject" id="id-53819e09da5b472d9d8963e656f3987f" targetConnections="id-b414d2cfbc6e4ee5a9daca72a4c15333 id-400c23c9f6744bef87fb72b8914c41ec id-700a45e751ea4be0bf901e61e18adee6 id-aed121f615964abcbe735e5da2a8575e id-8f30ca33aaa74c0885711f6b586dd268 id-9f76bd0e61d746b8bbaf94e0080d3369 id-a847d09071044b8289257e56f995c059 id-b6031c3f88a44e92b71d882768b5ce89 id-c8cdd0990c254df0a870361969131610 id-b1e020638ab049e9bba5b7af3e9ab529 id-f45502da37d04371890870c70a1cf83a id-196a9eb0f7224fceb232e33f389c5f07 id-9e8789c907a24521ba592fd15e69a8a3 id-57c0803aeb4d4ee3824397fd8af70b2a" archimateElement="id-a8b1994b8dde4d39b66904a84535da10">
@@ -1107,7 +1098,7 @@ http://bemor.ssv.uz/login&#xD;
           <sourceConnection xsi:type="archimate:Connection" id="id-3bdbf9a96dc64370a21e23ba8444173e" source="id-36f4baa7fdbd4c26b39d3f692d403597" target="id-dd56f4f3816e4a36bd1cef58cf5b506e" archimateRelationship="id-409bcfcbdcca4f9ab00a8bb5245b2eea"/>
           <sourceConnection xsi:type="archimate:Connection" id="id-bbb0299de8884207ada86b8a758d628d" source="id-36f4baa7fdbd4c26b39d3f692d403597" target="id-b26a76cd27954d35a0ce8de0f55981df" archimateRelationship="id-179ca82e41e9499ab95ad296df8baaa8"/>
         </child>
-        <child xsi:type="archimate:DiagramObject" id="id-e27af41d989b41ea815ae6631a779cfa" targetConnections="id-53a2c64e06174e5488fc4af5f888a227 id-f0f7fe7fca1247e69eb2f0b625114843 id-72fe978c56534cb3b7b209ce86089373 id-f54c89f580514e9d8f50a4aee9e456e5 id-875323e7c3bb457e90b13d79c89348f8 id-aa75e7ec0c9142798a5f18be4ca0ef0f id-e7e2982e0dbb4d8795c1474a4d472b09" archimateElement="id-e43291ebb99f4e5d94e4381669ab7d29">
+        <child xsi:type="archimate:DiagramObject" id="id-e27af41d989b41ea815ae6631a779cfa" targetConnections="id-53a2c64e06174e5488fc4af5f888a227 id-f0f7fe7fca1247e69eb2f0b625114843 id-72fe978c56534cb3b7b209ce86089373 id-f54c89f580514e9d8f50a4aee9e456e5 id-e7e2982e0dbb4d8795c1474a4d472b09" archimateElement="id-e43291ebb99f4e5d94e4381669ab7d29">
           <bounds x="12" y="84" width="901" height="133"/>
           <child xsi:type="archimate:DiagramObject" id="id-b26a76cd27954d35a0ce8de0f55981df" targetConnections="id-67b53a02161d4516b06d06455221cf14 id-39a7956699ee4f83bccb43959c061a55 id-bbb0299de8884207ada86b8a758d628d id-127a3b2f401d4ec687bda4844c091851" archimateElement="id-b3ba090f313b48ef95302806143e821a">
             <bounds x="252" y="60" width="109" height="55"/>
@@ -1121,17 +1112,9 @@ http://bemor.ssv.uz/login&#xD;
             <bounds x="12" y="60" width="109" height="55"/>
             <sourceConnection xsi:type="archimate:Connection" id="id-f54c89f580514e9d8f50a4aee9e456e5" source="id-dd56f4f3816e4a36bd1cef58cf5b506e" target="id-e27af41d989b41ea815ae6631a779cfa" archimateRelationship="id-80e9f2a6d8a249a9bd7d25d9e10a01b4"/>
           </child>
-          <child xsi:type="archimate:DiagramObject" id="id-a57f820fd42b4e6d9528dbd5e90e0ecc" targetConnections="id-a66e4c4af66948f6b3b60b8ab42f073e id-b9910e2d08a04643ae192236fb8f6f53 id-b7b23776bff944b0b01718d2af9fe42c" archimateElement="id-703f3ad0547647bcbadf985a6220f152">
-            <bounds x="372" y="60" width="121" height="55"/>
-            <sourceConnection xsi:type="archimate:Connection" id="id-aa75e7ec0c9142798a5f18be4ca0ef0f" source="id-a57f820fd42b4e6d9528dbd5e90e0ecc" target="id-e27af41d989b41ea815ae6631a779cfa" archimateRelationship="id-f010e84dedb249b28bb46a1e1a3dbcfc"/>
-          </child>
           <child xsi:type="archimate:DiagramObject" id="id-4fe4aa944b5e4cde8ea20eb623ab4d9f" targetConnections="id-736f7e48b4314fbe8a5082e3b23cfe25" archimateElement="id-2003b80aa9bf4cce9e64d3f1e5ad30f6">
             <bounds x="515" y="60" width="120" height="55"/>
             <sourceConnection xsi:type="archimate:Connection" id="id-53a2c64e06174e5488fc4af5f888a227" source="id-4fe4aa944b5e4cde8ea20eb623ab4d9f" target="id-e27af41d989b41ea815ae6631a779cfa" archimateRelationship="id-81a68296ef5148e084dcac172d7230f8"/>
-          </child>
-          <child xsi:type="archimate:DiagramObject" id="id-58f28e5c023f4abe858df770d0d6bdd7" archimateElement="id-e9a8d0c98a7e4931930ab8f5af800e39">
-            <bounds x="660" y="60" width="61" height="55"/>
-            <sourceConnection xsi:type="archimate:Connection" id="id-875323e7c3bb457e90b13d79c89348f8" source="id-58f28e5c023f4abe858df770d0d6bdd7" target="id-e27af41d989b41ea815ae6631a779cfa" archimateRelationship="id-c8a6c3c83ac442fc806cbba71692f75e"/>
           </child>
           <child xsi:type="archimate:DiagramObject" id="id-f42e106db6914ad7bbae7973a420f681" targetConnections="id-f7292f4f423b49a4aae21026a20c2f44 id-da6787207e654c3baa704c4df76b9d91 id-baf57f78a77546a489191a1845601431" archimateElement="id-d56f0d98a2504ac5a34111e0d26bef81">
             <bounds x="744" y="60" width="125" height="55"/>
@@ -1141,12 +1124,10 @@ http://bemor.ssv.uz/login&#xD;
         <child xsi:type="archimate:DiagramObject" id="id-602864c598fe42188c1660b62cc80a6d" archimateElement="id-efd14b9bb2f9409fb2e2a076a650ce3e">
           <bounds x="167" y="12" width="120" height="55"/>
           <sourceConnection xsi:type="archimate:Connection" id="id-67b53a02161d4516b06d06455221cf14" source="id-602864c598fe42188c1660b62cc80a6d" target="id-b26a76cd27954d35a0ce8de0f55981df" archimateRelationship="id-39b5e26b27a64c259b71c37ec4717b8b"/>
-          <sourceConnection xsi:type="archimate:Connection" id="id-a66e4c4af66948f6b3b60b8ab42f073e" source="id-602864c598fe42188c1660b62cc80a6d" target="id-a57f820fd42b4e6d9528dbd5e90e0ecc" archimateRelationship="id-3dbaa63d54874cc6b6c587c469c5474a"/>
         </child>
         <child xsi:type="archimate:DiagramObject" id="id-0713417dba9a4ceeba639a8e5f2b12dd" archimateElement="id-d40d850273ab41b099fade3d0b03222c">
           <bounds x="419" y="12" width="120" height="55"/>
           <sourceConnection xsi:type="archimate:Connection" id="id-39a7956699ee4f83bccb43959c061a55" source="id-0713417dba9a4ceeba639a8e5f2b12dd" target="id-b26a76cd27954d35a0ce8de0f55981df" archimateRelationship="id-9e9dc765531642cbb20b78ccd6fd80dc"/>
-          <sourceConnection xsi:type="archimate:Connection" id="id-b9910e2d08a04643ae192236fb8f6f53" source="id-0713417dba9a4ceeba639a8e5f2b12dd" target="id-a57f820fd42b4e6d9528dbd5e90e0ecc" archimateRelationship="id-fd68971107a34ff0a7cb4cf2dd205593"/>
           <sourceConnection xsi:type="archimate:Connection" id="id-736f7e48b4314fbe8a5082e3b23cfe25" source="id-0713417dba9a4ceeba639a8e5f2b12dd" target="id-4fe4aa944b5e4cde8ea20eb623ab4d9f" archimateRelationship="id-894eab535f3d4b278d3fe2caeb30efe4"/>
         </child>
         <child xsi:type="archimate:DiagramObject" id="id-1453590c7e5f4b109affe804e17c9dc8" archimateElement="id-a19e38bfac54454299e2109eab70f6fb">
@@ -1163,7 +1144,6 @@ http://bemor.ssv.uz/login&#xD;
         </child>
         <child xsi:type="archimate:DiagramObject" id="id-a177f65170544c9bb3bf5c4576820415" archimateElement="id-5c1a6ff079644ab3b1ea5669cabe9117">
           <bounds x="299" y="12" width="97" height="55"/>
-          <sourceConnection xsi:type="archimate:Connection" id="id-b7b23776bff944b0b01718d2af9fe42c" source="id-a177f65170544c9bb3bf5c4576820415" target="id-a57f820fd42b4e6d9528dbd5e90e0ecc" archimateRelationship="id-45d5e83a0200400cbc63e176c4e95be3"/>
           <sourceConnection xsi:type="archimate:Connection" id="id-127a3b2f401d4ec687bda4844c091851" source="id-a177f65170544c9bb3bf5c4576820415" target="id-b26a76cd27954d35a0ce8de0f55981df" archimateRelationship="id-d73f35d100dc4bd0b49f3074845e24d6"/>
         </child>
       </element>
@@ -1290,7 +1270,7 @@ http://bemor.ssv.uz/login&#xD;
       </element>
       <element xsi:type="archimate:ArchimateDiagramModel" name="Application Landscape" id="id-9bc90375b2654316bd7c414337112dc4" viewpoint="application_cooperation">
         <child xsi:type="archimate:DiagramObject" id="id-e3952664e3c9402fbc3c4abbbe2c3ff2" archimateElement="id-2f1dfa50de6f40e1a15ee72d5cd58228">
-          <bounds x="24" y="204" width="961" height="829"/>
+          <bounds x="24" y="204" width="961" height="1021"/>
           <child xsi:type="archimate:Group" id="id-5f9f5cd327ea4351ad7efc24f4f6fd7d" name="Интеграция (Middleware)" textAlignment="1">
             <bounds x="12" y="24" width="937" height="169"/>
             <child xsi:type="archimate:DiagramObject" id="id-8415dc2f11144526879034746d31845b" targetConnections="id-6b0d866230f54902aedd4203b4f51c5a id-4123eadabb00481db9ec373d40a70875 id-516397f18093438680560bee108eb746 id-084c215fba4a4868871da873f5a0731a id-23ba0783004041e2ba47da8e3409b27d id-b7449f0131494ee9947a877fe95ab4ca id-86f0d5802ec241da86a6a8d46b824679 id-2cb0c9dcc8c14eacb24fd8ef146f1f22 id-5d37bfe72482477d856a6ba053aae8dc" archimateElement="id-69cb00cdd10a4fa9975dcebef6284fa0">
@@ -1397,36 +1377,35 @@ http://bemor.ssv.uz/login&#xD;
             </child>
           </child>
           <child xsi:type="archimate:DiagramObject" id="id-75cf8e38ccaf44ca853d13f27974df9f" textAlignment="1" archimateElement="id-f783873ffa854069b8d3c694f1b4c968">
-            <bounds x="12" y="696" width="568" height="121"/>
+            <bounds x="12" y="849" width="568" height="121"/>
             <sourceConnection xsi:type="archimate:Connection" id="id-df3e4cb81a864db7805ce195095b1538" source="id-75cf8e38ccaf44ca853d13f27974df9f" target="id-145be4d267b0415fbcccdf0e00d40b2f" archimateRelationship="id-2224286ad339457bb5e0be9bae823ffb"/>
             <sourceConnection xsi:type="archimate:Connection" id="id-919fadbf7ae74011997ad4619862438c" source="id-75cf8e38ccaf44ca853d13f27974df9f" target="id-204b61266d6c45db8906d2ba65a43df3" archimateRelationship="id-ac48e2a9589d4d8c97440a0bb942bb8f"/>
             <sourceConnection xsi:type="archimate:Connection" id="id-f9ebf5d92e944f7d9a2e3b7c3773dcca" source="id-75cf8e38ccaf44ca853d13f27974df9f" target="id-7c00d86a775f400595ea451c6a18f71c" archimateRelationship="id-4e5bc2ce7d544d4d8218dd1ec1b2fa88"/>
             <child xsi:type="archimate:DiagramObject" id="id-145be4d267b0415fbcccdf0e00d40b2f" targetConnections="id-df3e4cb81a864db7805ce195095b1538" archimateElement="id-6cfa9e82077a450c937503bbab4507d1">
-              <bounds x="15" y="36" width="120" height="55"/>
+              <bounds x="15" y="36" width="130" height="61"/>
             </child>
             <child xsi:type="archimate:DiagramObject" id="id-204b61266d6c45db8906d2ba65a43df3" targetConnections="id-919fadbf7ae74011997ad4619862438c" archimateElement="id-6cb457df8c4345d48822374126949a6b">
-              <bounds x="144" y="36" width="120" height="55"/>
+              <bounds x="156" y="36" width="145" height="61"/>
             </child>
             <child xsi:type="archimate:DiagramObject" id="id-7c00d86a775f400595ea451c6a18f71c" targetConnections="id-f9ebf5d92e944f7d9a2e3b7c3773dcca" archimateElement="id-4daf2bd182854d0db9b520e56cc6245d">
-              <bounds x="276" y="36" width="120" height="55"/>
+              <bounds x="312" y="36" width="120" height="55"/>
             </child>
             <child xsi:type="archimate:DiagramObject" id="id-a75c0cb56c734266a9dfdffd0347ef95" archimateElement="id-574e3fb0168241379cfa632eb97efff7">
-              <bounds x="408" y="36" width="120" height="55"/>
+              <bounds x="444" y="36" width="108" height="55"/>
             </child>
           </child>
           <child xsi:type="archimate:DiagramObject" id="id-3df51ab7b2d54207b7f696ca05e6450b" textAlignment="1" archimateElement="id-5e84c7ae971e445eb6a4f3740153f22d">
-            <bounds x="600" y="624" width="349" height="193"/>
+            <bounds x="600" y="612" width="349" height="205"/>
             <sourceConnection xsi:type="archimate:Connection" id="id-c6abeef24a48495e95f501134bc52ae8" source="id-3df51ab7b2d54207b7f696ca05e6450b" target="id-a6fb0d9dc4364031af75f84bc72168af" archimateRelationship="id-e7c6214121e7472aac27d97ce9a3c629"/>
             <sourceConnection xsi:type="archimate:Connection" id="id-ccf598355b5a435b970ed6eb68ca2af3" source="id-3df51ab7b2d54207b7f696ca05e6450b" target="id-cd3e29dc18e94a0a86f4695d9985ea73" archimateRelationship="id-eb90989f563b4a7c93178fd25fec6385"/>
-            <sourceConnection xsi:type="archimate:Connection" id="id-76212d3eaabf419c9f5d2836c739d667" source="id-3df51ab7b2d54207b7f696ca05e6450b" target="id-5ed76b402d1c4092b9d537943b340306" archimateRelationship="id-41ca4f48830847c6b7e28336166ce3bd"/>
             <child xsi:type="archimate:DiagramObject" id="id-a6fb0d9dc4364031af75f84bc72168af" targetConnections="id-c6abeef24a48495e95f501134bc52ae8" archimateElement="id-0b106390c20d48ce9c55988e9f47eca8">
-              <bounds x="15" y="96" width="145" height="73"/>
+              <bounds x="15" y="108" width="145" height="73"/>
             </child>
             <child xsi:type="archimate:DiagramObject" id="id-cd3e29dc18e94a0a86f4695d9985ea73" targetConnections="id-ccf598355b5a435b970ed6eb68ca2af3" archimateElement="id-03ff3b20353e4cf8b9be1504f86c6b90">
-              <bounds x="171" y="96" width="157" height="73"/>
+              <bounds x="171" y="108" width="157" height="73"/>
             </child>
-            <child xsi:type="archimate:DiagramObject" id="id-5ed76b402d1c4092b9d537943b340306" targetConnections="id-76212d3eaabf419c9f5d2836c739d667" archimateElement="id-e25a78c54baa4fde9eac0147d8626275">
-              <bounds x="15" y="24" width="120" height="55"/>
+            <child xsi:type="archimate:DiagramObject" id="id-d366ea5bbadb4b12a2718d661d4ae52a" archimateElement="id-ed4c6b0633ae498680b35df0233ef86e">
+              <bounds x="15" y="36" width="145" height="55"/>
             </child>
           </child>
           <child xsi:type="archimate:DiagramObject" id="id-3268198625fb405cae2845514e7ebfdd" textAlignment="1" archimateElement="id-4f228a251dc8468680253a046255378f">
@@ -1442,6 +1421,18 @@ http://bemor.ssv.uz/login&#xD;
             </child>
             <child xsi:type="archimate:DiagramObject" id="id-0be588c28b70498dacec6101fe34867a" targetConnections="id-668857ec8c1343a4bc436b8c76831645" archimateElement="id-cddf9f866e2f42fe82a579903d212ca4">
               <bounds x="276" y="36" width="120" height="55"/>
+            </child>
+          </child>
+          <child xsi:type="archimate:DiagramObject" id="id-14b122005e8649169ae4048cb7446ec3" archimateElement="id-d4f57c6c38cb42b6b91805cb9947ff25">
+            <bounds x="432" y="480" width="120" height="55"/>
+          </child>
+          <child xsi:type="archimate:DiagramObject" id="id-92e36f70ec764365b25a98231ca8429a" textAlignment="1" archimateElement="id-1f82f1b4100745688029640517c7d38c">
+            <bounds x="12" y="696" width="568" height="140"/>
+            <child xsi:type="archimate:DiagramObject" id="id-24271657afa2463795058609e85a0041" archimateElement="id-fa12ef5ece5441e5bf2ee876cd1bb139">
+              <bounds x="12" y="36" width="133" height="55"/>
+            </child>
+            <child xsi:type="archimate:DiagramObject" id="id-382d304730af4022b32fc4077b7f4665" archimateElement="id-fb139b7809984b4ebf5277775d98f131">
+              <bounds x="156" y="36" width="120" height="55"/>
             </child>
           </child>
         </child>
