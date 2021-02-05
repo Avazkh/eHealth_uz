@@ -242,7 +242,7 @@
       <element xsi:type="archimate:ApplicationService" name="Направление к Специалисту (eReferral) API" id="id-fe4ada6e4dcf4525a51a689ff3ebe846"/>
       <element xsi:type="archimate:ApplicationService" name="FHIR Bulk API" id="id-8f650d715e1a4367b0d11b9b592a67c1"/>
       <element xsi:type="archimate:ApplicationService" name="Каталог Сервисов (eService) API" id="id-5cb7fe1cdccc4ac5b8689e68ec142c83"/>
-      <element xsi:type="archimate:ApplicationService" name="Поиск Пациентов (MPI)API" id="id-2f6114e10e774586af7a3283b43f8dea"/>
+      <element xsi:type="archimate:ApplicationService" name="Регистрация /Поиск Пациентов (MPI)API" id="id-2f6114e10e774586af7a3283b43f8dea"/>
       <element xsi:type="archimate:ApplicationService" name="PACS API" id="id-866979fcac474dec915cd53d10842a1b"/>
       <element xsi:type="archimate:ApplicationService" name="Разрешение Пациента (Patient Consent) API" id="id-fe57d660e6034fc19cd7e026531e56cf"/>
       <element xsi:type="archimate:ApplicationService" name="Реестр Аптек (Pharmacy Org) API" id="id-93751054026949cb859b4cd3bb59d727"/>
@@ -289,7 +289,7 @@
     <element xsi:type="archimate:ApplicationService" name="Отпуск Лекарств (Dispense) API" id="id-ce52689bfeda48ca9741867ad07d4005"/>
     <element xsi:type="archimate:ApplicationService" name="Лист Ожиданий (Waitlist) API" id="id-cc1931906c344fceb64545d05bd771a9"/>
     <element xsi:type="archimate:ApplicationService" name="Лаб (Lab) API" id="id-c74ada9141eb43e288acfc54bf703639"/>
-    <element xsi:type="archimate:ApplicationService" name="Паспорт Организа-ции (Location Registry) API" id="id-297ef9020e0c4c81aba289a2cce1ab5a"/>
+    <element xsi:type="archimate:ApplicationService" name="Регистрация Учреждений (Location Registry) API" id="id-297ef9020e0c4c81aba289a2cce1ab5a"/>
     <element xsi:type="archimate:DataObject" name="Хранилище Аналитических Данных (Data Warehouse)" id="id-574e3fb0168241379cfa632eb97efff7"/>
     <element xsi:type="archimate:ApplicationComponent" name="АИС ИС ЭМИЗ " id="id-431239a049f44edebd449f5321af3877">
       <documentation>Информационная система Электронного мониторинга инфекционных заболеваний.&#xD;
@@ -342,10 +342,10 @@ http://bemor.ssv.uz/login&#xD;
     <element xsi:type="archimate:ApplicationComponent" name="Аптечная ИС" id="id-a72cfd1cabb44adfa418f1bfb2388a05"/>
     <element xsi:type="archimate:ApplicationComponent" name="ИС Виртуальный Прием (Telemedicine)" id="id-09836c9a89ee4fc5a6c4dc9345cd8c20"/>
     <element xsi:type="archimate:ApplicationComponent" name="Реестр Медицинских Услуг" id="id-d6bc87621fd241b1b8d189e16674d24c"/>
-    <element xsi:type="archimate:ApplicationComponent" name="Паспорт Учреждения" id="id-1b5cadbd67924d3ca2737ca4a8eae468"/>
     <element xsi:type="archimate:ApplicationComponent" name="ИС Назначения Лечения (CPOE)" id="id-0c2b0061edb741f088d000c2cd4773d5"/>
     <element xsi:type="archimate:ApplicationComponent" name="Госпитальная ИС (HIS)" id="id-489180083016430d85b0d5430a35cae0"/>
     <element xsi:type="archimate:ApplicationComponent" name="Просмотр и Поиск Клинических документов (ClinDoc Viewer)" id="id-8d2fec487ed74e709bc6898fd712936f"/>
+    <element xsi:type="archimate:ApplicationService" name="Мед Карта/ Анамнез (Patient Summary) API" id="id-ff63e3391d294ec4a29c66575442d732"/>
   </folder>
   <folder name="Technology &amp; Physical" id="id-87f594b2c8754629bbda6331bd3a60ab" type="technology">
     <element xsi:type="archimate:Device" name="Внешнее Приложение" id="id-459c9ffcfb5844afb4539e31f3ea8c44"/>
@@ -1353,49 +1353,52 @@ http://bemor.ssv.uz/login&#xD;
               <bounds x="144" y="27" width="169" height="52"/>
             </child>
             <child xsi:type="archimate:DiagramObject" id="id-65637fff62cb4e4680c1bf81d0d2b876" archimateElement="id-fe4ada6e4dcf4525a51a689ff3ebe846">
-              <bounds x="144" y="150" width="133" height="58"/>
+              <bounds x="144" y="153" width="133" height="55"/>
             </child>
             <child xsi:type="archimate:DiagramObject" id="id-761a8fbe73234418a8db4f1ea9fe3199" archimateElement="id-93751054026949cb859b4cd3bb59d727">
               <bounds x="445" y="153" width="120" height="55"/>
             </child>
             <child xsi:type="archimate:DiagramObject" id="id-d7507e568e394b15b3395b4ae356b56f" archimateElement="id-23fba20656fb4733a7b9555c574f7d95">
-              <bounds x="288" y="90" width="145" height="52"/>
+              <bounds x="288" y="88" width="145" height="55"/>
             </child>
             <child xsi:type="archimate:DiagramObject" id="id-a478d5b3301a4e129ffba1deba5b5250" archimateElement="id-5cb7fe1cdccc4ac5b8689e68ec142c83">
-              <bounds x="12" y="87" width="120" height="61"/>
+              <bounds x="12" y="88" width="120" height="55"/>
             </child>
             <child xsi:type="archimate:DiagramObject" id="id-ecb5abdc1a1146658455ee1c7a7913d4" archimateElement="id-eac8e82ecfbb4c52b779a5c19bf7213e">
-              <bounds x="708" y="84" width="141" height="73"/>
+              <bounds x="744" y="87" width="141" height="73"/>
             </child>
             <child xsi:type="archimate:DiagramObject" id="id-28bdfd81efc64dc29a3c18ef6d1cba56" archimateElement="id-8f650d715e1a4367b0d11b9b592a67c1">
-              <bounds x="708" y="168" width="141" height="40"/>
+              <bounds x="744" y="168" width="141" height="40"/>
             </child>
             <child xsi:type="archimate:DiagramObject" id="id-94a8656fd8e0418aa3c6dc1ae63344b7" archimateElement="id-fe57d660e6034fc19cd7e026531e56cf">
               <bounds x="288" y="153" width="145" height="55"/>
             </child>
             <child xsi:type="archimate:DiagramObject" id="id-2d2dd782d8b14cf491cfa5ea6ffe7961" archimateElement="id-8b807d026b734736b40f5bd66cb73945">
-              <bounds x="12" y="150" width="120" height="58"/>
+              <bounds x="12" y="153" width="120" height="55"/>
             </child>
             <child xsi:type="archimate:DiagramObject" id="id-314c98a3ef0f4039943d7ff9cee5d63d" archimateElement="id-866979fcac474dec915cd53d10842a1b">
-              <bounds x="576" y="118" width="120" height="25"/>
+              <bounds x="588" y="118" width="120" height="25"/>
             </child>
             <child xsi:type="archimate:DiagramObject" id="id-e8f5bee0994a42ab9c42c096bbb7212c" archimateElement="id-15e2f62901234156ab73311f458871f3">
-              <bounds x="708" y="24" width="141" height="55"/>
+              <bounds x="744" y="27" width="141" height="52"/>
             </child>
             <child xsi:type="archimate:DiagramObject" id="id-bd65d04539454d438457d1ce6d47e4c6" archimateElement="id-39c8268a8dc44aaea4f1e63c295d7130">
-              <bounds x="576" y="27" width="120" height="52"/>
+              <bounds x="624" y="27" width="109" height="52"/>
             </child>
             <child xsi:type="archimate:DiagramObject" id="id-dd3480f9a4df43efa8cac5f0a2aece00" archimateElement="id-ce52689bfeda48ca9741867ad07d4005">
-              <bounds x="576" y="151" width="120" height="55"/>
+              <bounds x="588" y="153" width="120" height="55"/>
             </child>
             <child xsi:type="archimate:DiagramObject" id="id-39dface7448e4d098040a645293c5b85" archimateElement="id-cc1931906c344fceb64545d05bd771a9">
-              <bounds x="144" y="93" width="133" height="49"/>
+              <bounds x="144" y="88" width="133" height="55"/>
             </child>
             <child xsi:type="archimate:DiagramObject" id="id-6e57876d35984291aa946f7bae6296ee" archimateElement="id-c74ada9141eb43e288acfc54bf703639">
-              <bounds x="576" y="87" width="120" height="24"/>
+              <bounds x="588" y="87" width="120" height="24"/>
             </child>
             <child xsi:type="archimate:DiagramObject" id="id-ef2bfc26de4f4b329dfebed3f7380143" archimateElement="id-297ef9020e0c4c81aba289a2cce1ab5a">
-              <bounds x="324" y="27" width="157" height="52"/>
+              <bounds x="324" y="27" width="133" height="52"/>
+            </child>
+            <child xsi:type="archimate:DiagramObject" id="id-b759e349085f4b2a9a574157f9b5f4ab" archimateElement="id-ff63e3391d294ec4a29c66575442d732">
+              <bounds x="468" y="27" width="145" height="52"/>
             </child>
           </child>
           <child xsi:type="archimate:DiagramObject" id="id-4a5b89591b66468c82c0e96033f5e124" textAlignment="1" archimateElement="id-46aae641bb3644788ef0c389f4d0678f">
@@ -1465,9 +1468,6 @@ http://bemor.ssv.uz/login&#xD;
             </child>
             <child xsi:type="archimate:DiagramObject" id="id-8221923e45614ab5b44891c790d54a94" archimateElement="id-d6bc87621fd241b1b8d189e16674d24c">
               <bounds x="288" y="108" width="120" height="55"/>
-            </child>
-            <child xsi:type="archimate:DiagramObject" id="id-6ebe851014674b0c91e21301ba5742f8" archimateElement="id-1b5cadbd67924d3ca2737ca4a8eae468">
-              <bounds x="420" y="108" width="120" height="55"/>
             </child>
           </child>
           <child xsi:type="archimate:DiagramObject" id="id-402f09f6f5e94afaadb43848aaf11046" archimateElement="id-0237439afc9949ea9faaeb17159db057">
